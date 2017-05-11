@@ -1,4 +1,4 @@
-const mainContainerReducer = (state = {'data':[]}, action) => {
+const TopologyReducer = (state = {'data':[]}, action) => {
   switch (action.type) {
     case 'LoadHousing':
       return Object.assign({}, state, {
@@ -9,4 +9,4 @@ const mainContainerReducer = (state = {'data':[]}, action) => {
   }
 }
 
-export default mainContainerReducer
+export default TopologyReducer

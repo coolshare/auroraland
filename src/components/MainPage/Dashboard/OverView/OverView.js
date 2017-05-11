@@ -2,11 +2,11 @@ import React from 'react'
 import {connect} from 'react-redux'
 import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
-import todoStyle from "./Todo.css"
+import todoStyle from "./OverView.css"
 
 const Td = props => <td style={{"width":"33%", "border": "1px solid black"}} {...props}/>
 
-class _TodoList extends React.Component{
+class _OverView extends React.Component{
 
 	constructor(props) {
 		super(props);
@@ -59,7 +59,7 @@ class _TodoList extends React.Component{
             )
         });
 		return (
-			<div id="todoList" style={{backgroundColor:'#b0e0e6', width:'100%', minHeight:'500px', marginTop:'-10px', marginLeft:'-20px'}}>
+			<div id="OverView" style={{backgroundColor:'#b0e0e6', width:'100%', minHeight:'500px', marginTop:'-10px', marginLeft:'-20px'}}>
 				<h4>To-Do List</h4>
 
 				<div style={{'height':'380px', 'marginLeft':'20px', 'marginRight':'20px','overflow':'auto'}}>
@@ -88,11 +88,11 @@ class _TodoList extends React.Component{
 	}
 }
 
-const TodoList = connect(
+const OverView = connect(
 		  store => {
 			    return {
-			    	todos: store.TodoReducer
+			    	todos: store.OverViewReducer
 			    };
 			  }
-			)(_TodoList);
-export default TodoList
+			)(_OverView);
+export default OverView

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Accordion, Panel,PanelGroup } from 'react-bootstrap';
-import styles from './FormTable.css';
+import styles from './Dashboard.css';
 import {connect} from 'react-redux'
 import cs from '../../../services/CommunicationService'
 /**
@@ -29,10 +29,8 @@ class _LeftPane extends React.Component{
 	render(){
 		return (
 			<div id="leftPane" style={{minHeight:'500px', backgroundColor:'#e1e1e1'}}>
-				<PanelGroup activeKey={this.state.activeKey} onSelect={this.handleSelect} accordion>
-			  		<Panel header="Local Activity" eventKey="1"><li><a href="#" onClick={(evt) => this.handleink('TodoList', evt)} className={this.props.currentPage=="TodoList"?"selectedAccordionLink":"unselectedAccordionLink"}>ToDo List</a></li></Panel>
-		        	<Panel header="Remote Data" eventKey="2"><li><a href="#" onClick={(evt) => this.handleink('HousingInfo', evt)} className={this.props.currentPage=="HousingInfo"?"selectedAccordionLink":"unselectedAccordionLink"}>Housing Info</a></li></Panel>
-		        </PanelGroup>
+				<li><a href="#" onClick={(evt) => this.handleink('Overview', evt)} className={this.props.currentPage=="Overview"?"selectedAccordionLink":"unselectedAccordionLink"}>ToDo List</a></li>
+		        <li><a href="#" onClick={(evt) => this.handleink('Topology', evt)} className={this.props.currentPage=="Topology"?"selectedAccordionLink":"unselectedAccordionLink"}>Housing Info</a></li>
 	        </div>
 		)
 	}

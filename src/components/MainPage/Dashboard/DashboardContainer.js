@@ -5,7 +5,7 @@ import { Grid, Row, Col } from 'react-bootstrap';
 /**
 *
 */
-export default class FormTableContainer extends React.Component{
+export default class DashboardContainer extends React.Component{
 
 	/**
     * render
@@ -13,7 +13,7 @@ export default class FormTableContainer extends React.Component{
     */
 	render(){
 		return (
-			<div id="FormTableContainer">	
+			<div id="DashboardContainer">	
 				<Grid bsClass="gridContainer">
 					<Row className="show-grid">
 				      <Col xs={4} md={4} style={{"maxWidth":"250px"}}>

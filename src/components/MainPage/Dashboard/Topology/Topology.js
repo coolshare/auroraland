@@ -6,7 +6,7 @@ import cs from '../../../../services/CommunicationService'
 import $ from "jquery";
 
  
-class _HousingInfo extends React.Component{
+class _Topology extends React.Component{
 
 	constructor(props) {
 		super(props);
@@ -48,7 +48,7 @@ class _HousingInfo extends React.Component{
     */
 	render(){
 		return (
-			<div id="todoList" style={{backgroundColor:'#b0e0e6', minHeight:'500px', marginTop:'-10px', marginLeft:'-20px'}}>
+			<div id="Overview" style={{backgroundColor:'#b0e0e6', minHeight:'500px', marginTop:'-10px', marginLeft:'-20px'}}>
 				<h4>Housing Info (JSONP)</h4>
 				<div style={{minHeight:'250px'}}>
 					<ReactDataGrid
@@ -71,11 +71,11 @@ const EmptyRowsView = createReactClass({
 	  }
 	});
 
-const HousingInfo = connect(
+const Topology = connect(
 		  store => {
 			    return {
 			    	data: store.HousingReducer.data
 			    };
 			  }
-			)(_HousingInfo);
-export default HousingInfo
+			)(_Topology);
+export default Topology

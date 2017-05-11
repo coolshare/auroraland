@@ -1,8 +1,8 @@
 import React from 'react'
 import {bindActionCreators} from 'redux'
 import {connect} from 'react-redux'
-import TodoList from './TodoList/TodoList'
-import HousingInfo from './HousingInfo/HousingInfo'
+import Overview from './Overview/Overview'
+import Topology from './Topology/Topology'
 
 
 function ChildPane(children) {
@@ -15,7 +15,7 @@ class _RightPane extends React.Component{
 		return (
 			 <div>
 			 	<ChildPane>
-			 		{id=>id==="TodoList"?<TodoList/>:id==="HousingInfo"?<HousingInfo/>:null}
+			 		{id=>id==="Overview"?<Overview/>:id==="Topology"?<Topology/>:null}
 			 	</ChildPane>
 			 </div>
 		)

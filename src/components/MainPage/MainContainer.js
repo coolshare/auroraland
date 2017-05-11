@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 import cs from '../../services/CommunicationService'
 import Footer from './Footer';
-import FormTableContainer from './FormTable/FormTableContainer';
+import DashboardContainer from './Dashboard/DashboardContainer';
 import GoogleMapContainer from './Maps/GoogleMap/GoogleMapContainer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import MapContainer from './Maps/MapContainer'
@@ -24,18 +24,14 @@ class _MainContainer extends React.Component{
 			<div id="MainContainer">	
 				<Tabs onSelect={this.handleSelect} selectedIndex={this.props.currentTab}>				
 					<TabList>
-			          <Tab>Form/Table</Tab>
-			          <Tab>Maps</Tab>
-			          <Tab>Others</Tab>
+			          <Tab>Dashboard</Tab>
+			          <Tab>Zones in Map</Tab>
 			        </TabList>
 			        <TabPanel>
-			        	<FormTableContainer/>
+			        	<DashboardContainer/>
 			        </TabPanel>
 			        <TabPanel>
 			        	<MapContainer/>
-			        </TabPanel>
-			        <TabPanel>
-			          <h4>Under construction</h4>
 			        </TabPanel>
 				</Tabs>
 				<Footer/>
