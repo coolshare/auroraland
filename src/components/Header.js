@@ -26,7 +26,7 @@ class _Header extends React.Component{
     */
 	render(){
 		return (
-			<div id="header"   style={{margin:'5px', 'border':'1px solid #e1e1e1','backgroundColor':'#e1e1e1'}}>
+			<div id="header"   style={{'backgroundColor':'#e1e1e1'}}>
 			<Grid bsClass="gridContainer">
 				<Row className="show-grid">
 			      <Col xs={6} md={6}>
