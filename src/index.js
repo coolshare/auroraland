@@ -21,9 +21,8 @@ render(
   <Provider store={store}>
 	  <Router history={browserHistory }>
 		<Route path='/' component={TopContainer}>
-			<IndexRoute component={Login} />" +
+			<IndexRoute component={Login} />
 			<Route path='/main' component={MainRouteContainer} />	
-			<Route path='/Patterns' component={PatternsRouteContainer} />	" +
 		</Route>
 	</Router>
   </Provider>,

@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import cs from '../../services/CommunicationService'
 import Footer from './Footer';
 import DashboardContainer from './Dashboard/DashboardContainer';
-import GoogleMapContainer from './Maps/GoogleMap/GoogleMapContainer';
+import ZonesMapContainer from './Maps/ZonesMap/ZonesMapContainer';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import MapContainer from './Maps/MapContainer'
 

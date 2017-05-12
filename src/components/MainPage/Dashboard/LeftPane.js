@@ -28,9 +28,9 @@ class _LeftPane extends React.Component{
     */
 	render(){
 		return (
-			<div id="leftPane" style={{minHeight:'500px', backgroundColor:'#e1e1e1'}}>
-				<li><a href="#" onClick={(evt) => this.handleink('Overview', evt)} className={this.props.currentPage=="Overview"?"selectedAccordionLink":"unselectedAccordionLink"}>ToDo List</a></li>
-		        <li><a href="#" onClick={(evt) => this.handleink('Topology', evt)} className={this.props.currentPage=="Topology"?"selectedAccordionLink":"unselectedAccordionLink"}>Housing Info</a></li>
+			<div id="leftPane" style={{minHeight:'500px', backgroundColor:'#e1e1e1', padding:'10px'}}>
+				<li><a href="#" onClick={(evt) => this.handleink('Overview', evt)} className={this.props.currentPage=="Overview"?"selectedAccordionLink":"unselectedAccordionLink"}>Overview</a></li>
+		        {this.props.isAdmin?<li><a href="#" onClick={(evt) => this.handleink('Topology', evt)} className={this.props.currentPage=="Topology"?"selectedAccordionLink":"unselectedAccordionLink"}>Topology</a></li>:null}
 	        </div>
 		)
 	}
@@ -39,7 +39,8 @@ class _LeftPane extends React.Component{
 const LeftPane = connect(
 		  store => {
 			    return {
-			    	currentPage: store.MainRightPaneReducer.currentPage
+			    	currentPage: store.MainRightPaneReducer.currentPage,
+			    	isAdmin:store.TopLinkReducer.isAdmin 
 			    };
 			  }
 			)(_LeftPane);

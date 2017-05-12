@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import cs from '../services/CommunicationService'
 import style from './Top.css';
 import { browserHistory } from 'react-router';
+import { Link } from 'react-router'
 /**
 *
 */
@@ -32,8 +33,8 @@ class _Header extends React.Component{
 			      	<h3 style={{"margin":"3px"}}>Aurora Land</h3>
 			      </Col>
 			      <Col xs={6} md={6}>
-			      	<div style={{"marginTop":"10px"}}>
-			      	
+			      	<div style={{"marginTop":"10px", 'textAlign':"right"}}>
+			      		<Link to="/" style={{margin:'10px'}}>Logout</Link>
 			      	</div>
 			      </Col>
 			    </Row>

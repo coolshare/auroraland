@@ -1,0 +1,49 @@
+{
+	"DataCenters":[
+		{"name":"GCP", 
+			"zones":[
+				{"name":"US East Coast", "geo":[42.245193, -72.637846],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"US Wast Coast", "geo":[37.324813, -122.035319],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"US South Coast", "geo":[27.156504, -80.858391],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Canada", "geo":[51.459170, -107.758015],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"China East Coast", "geo":[31.322285, 121.379234],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Westen China", "geo":[39.280297, 75.061200],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Southen China", "geo":[39.280297, 75.061200],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Nothen China", "geo":[40.534210, 103.949299],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Singapore", "geo":[1.353054, 103.858709],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Central India", "geo":[23.625009, 77.735808],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Southen India", "geo":[8.929630, 77.365279],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25}
+			]	
+		},
+		{"name":"AWS", 
+			"zones":[
+				{"name":"US East Coast", "geo":[42.245293, -72.637846],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"US Wast Coast", "geo":[37.324913, -122.035319],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"US South Coast", "geo":[27.151504, -80.858391],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Canada", "geo":[51.459270, -107.758015],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"China East Coast", "geo":[31.322385, 121.379234],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Westen China", "geo":[39.280497, 75.061200],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Southen China", "geo":[39.280497, 75.061200],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Nothen China", "geo":[40.534510, 103.949299],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Singapore", "geo":[1.353454, 103.858709],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Central India", "geo":[23.625309, 77.735808],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Southen India", "geo":[8.929330, 77.365279],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25}
+			]	
+		},
+		{"name":"LINDODE", 
+			"zones":[
+				{"name":"US East Coast", "geo":[42.245193, -72.636846],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"US Wast Coast", "geo":[37.324813, -122.036319],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"US South Coast", "geo":[27.156504, -80.858691],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Canada", "geo":[51.459170, -107.757015],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"China East Coast", "geo":[31.322285, 121.379834],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Westen China", "geo":[39.280297, 75.061800],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Southen China", "geo":[39.280297, 75.061800],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Nothen China", "geo":[40.534210, 103.949899],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Singapore", "geo":[1.353054, 103.858809],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Central India", "geo":[23.625009, 77.738808],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25},
+				{"name":"Southen India", "geo":[8.929630, 77.365289],"IP":"1.2.3.4", "volume":"225GB", "bandwidth":25}
+			]	
+		}
+	]
+}

@@ -1,4 +1,4 @@
-const MainRightPaneReducer = (state = {'currentPage':'Topology'}, action) => {
+const MainRightPaneReducer = (state = {'currentPage':'Overview'}, action) => {
   switch (action.type) {
     case 'switchPage':
       return Object.assign({}, state, {
